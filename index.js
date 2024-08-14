@@ -31,15 +31,11 @@ const server = app.listen(process.env.PORT, () => {
 });
 
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
 
 
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "mongodb+srv://riyaamaheshwari25:Scuby@cluster0.zn3ju.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
     credentials: true,
   },
 });
